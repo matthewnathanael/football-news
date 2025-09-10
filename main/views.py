@@ -7,7 +7,6 @@ from django.core import serializers
 # Create your views here.
 def show_main(request):
     news_list = News.objects.all()
-    news_item = News.objects.filter(pk=news_id)
 
     context = {
         'npm' : '2406496265',
